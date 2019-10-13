@@ -1,0 +1,24 @@
+@page
+@model WebApplication.Pages.CurrencyConverter
+
+@{
+    ViewData["Title"] = "Currency Converter";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Currency converter</h1>
+
+    <div class="form-div">
+        <form method="POST">
+            <div class="form-group">
+                <label for="gbp">GBP:</label>
+                <input id="gbp" class="form-control" asp-for="Gbp" required/>
+            </div>
+            <div class="form-group">
+                <label for="eur">EUR:</label>
+                <input id="eur" class="form-control" asp-for="Eur" disabled/>
+            </div>
+            <button type="submit" class="btn btn-info">Convert</button>
+        </form>
+    </div>
+</div>
