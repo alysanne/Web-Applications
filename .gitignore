@@ -1,1 +1,6 @@
 .idea
+
+# C# compilation files
+
+obj/
+bin/
